@@ -1,0 +1,26 @@
+<!doctype html>
+<nav class="nav">
+	<ul>
+		<li><a href="Photoshop.html" class="navsides">Photoshop Toturials</a></li>
+		<li><a href="Lightroom.html" class="navsides">Lightroom Toturials</a></li>
+		<li><a href="Photo factory.html" class="logo">Photo<img src="Logo/Logo white.png" class="logoimg">Factory</a></li>
+		<li><a href="Photography.html" class="navsides">Photography Toturials</a></li>
+		<li><a href="About us.html" class="navsides">About Us</a></li>
+	</ul>
+</nav>
+
+
+<script type="text/javascript">
+
+  $(window).on("scroll", function() {
+	  if($(window).scrollTop()) {
+		  $('nav').addClass('black');
+	  } 
+
+	  else {
+		  $('nav').removeClass('black');
+	  }
+  })
+
+$(document).singlePageNav({filter: ':not(nav)'});
+</script>
